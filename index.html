@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+	<style >
+	div {
+	display: inline-block;
+    width: 320px;
+    border: 5px solid gray;
+    margin:0;	
+}
+
+</style>
+
+</head>
+<body>
+
+<table style="width:80%; margin:auto;" border = 4px>
+	<tr>
+		<td>
+			<form style ="background-color:powderblue;" method="post" action="/insert">
+				<h2><center>Insert Data</center></h2>
+				<h4 style="color:red;">ID :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="ID" placeholder="ID"><br> </h4>
+				<h4 style="color:red;">Name : <input type="text" name="Name" placeholder="Full Name"> <br> </h4>
+				<h4 style="color:red;">Position : <input type="text" name="Position" placeholder="Position"> <br> </h4>
+				<h4 style="color:red;">Address : <textarea name="Address" rows="10" cols="30"> </textarea> <br> </h4> 
+				<input type="submit" onclick= "alert('Record Inserted Successfully')">
+
+			</form>
+		</td>
+		<td>
+			<form style ="background-color:powderblue;" method="post" action="/query">
+				<h2><center>Search Data</center></h2>
+				<h4 style="color:red;">ID :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="ID" placeholder="ID"><br> </h4>
+				<h4 style="color:red;">Name : <input type="text" name="Name" placeholder="Full Name"> <br> </h4>
+				<input type="submit">
+
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<form style ="background-color: powderblue;" method="post" action="/update">
+				<h2><center>Update Data</center></h2>
+				<h4 style="color:red;">ID :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="ID" placeholder="ID"><br> </h4>
+				<h4 style="color:red;">New Name : <input type="text" name="Name" placeholder="New Name"> <br> </h4>
+				<input type="submit" onclick= "alert('Data Updated Successfully')">
+			</form>
+		</td>
+		<td>
+			<form style ="background-color: powderblue;" method="post" action="/delete">
+				<h2><center>Delete Data</center></h2>
+				<h4 style="color:red;">ID :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="ID" placeholder="ID"><br> </h4>
+				<h4 style="color:red;">Name : <input type="text" name="Name" placeholder="Full Name"> <br> </h4>
+				<button onclick= "alert('Do you really want to delete the record?')">Submit</button>
+			</form>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
